@@ -1,1 +1,7 @@
 # text_clustering
+Text clustering involves the processes in grouping a set of unlabelled set of words, phrases or sentences such that the members within a single cluster share some kind of similarity and are less similar than objects in a different cluster. There are many clustering techniques like KMeans, DBSCAN, Hierarchical clustering, Spectral clustering, Affinity Propagation, etc. 
+
+
+The objective of the project was to cluster semantic data consisting of words, phrases and sentences into suitable number of clusters by experimenting on various clustering algorithms. The cleaned data consisted of 10863 sample points. After text cleaning, descriptions were introduced wherever possible from the descriptions data(WikiDataInfo) and where descriptions were not available, the word/phrase was left untouched. Then Word2Vec was applied to the descriptions data to convert it to a numeric vector form. In the case of phrases, the average of the sum of vectors of the words in the phrase was taken and then normalized.
+
+For this particular project, experiments have been conducted using KMeans, DBSCAN, Heirarchical clustering and Spectral clustering. As a result, Kmeans and hierarchical(agglomerative) clustering have given better results. So their codes and results have been uploaded in the repository. For K-Means, SSE(Sum of squared Euclidian distances) and silhouette scores were used to distinguish the optimal K value and dendrograms were used for the hierarchical model.
